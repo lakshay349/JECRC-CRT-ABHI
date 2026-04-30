@@ -45,3 +45,95 @@ int main() {
    cout << isEquilateral << endl;
    return 0;
 }
+
+
+// Problem 4
+// Swap values of 2 variables using 3rd variable
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int a;
+    int b;
+    
+    cin >> a >> b;
+    // swapping Logic
+    int temp = a;
+    a = b;
+    b = temp;
+    
+    cout << a << "\n" << b << endl;
+    return 0;
+}
+
+
+// Area of Shapes
+// 1 -- circle, 2 == rectangle, 3-- triangle
+#include<iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    cin >> choice;
+    
+    if(choice == 1){
+        double radius;
+        cin >> radius;
+        cout << 3.14 * radius * radius << endl;
+    } else if (choice == 2) {
+        double length, width;
+        cin >> length >> width;
+        cout << length * width<< endl;
+    } else if (choice == 3) {
+        double base, height;
+        cin >> base >> height;
+        cout << 0.5 * base * height << endl;
+    } else {
+        cout << "invalid Choice" << endl;
+    }
+    return 0;
+    
+}
+
+
+// sum and average of 3 numbers 
+// take input from the users and find sum and average 
+#include<iostream>
+using namespace std;
+
+int main() {
+    int a, b, c, sum;
+    float avergae;
+    
+    cin >> a >> b >> c;
+    sum = a + b + c;
+    avergae = sum / 3.0;
+    
+    cout << sum << endl;
+    cout << avergae << endl;
+    
+    return 0;
+}
+
+
+// Login Credential Program 
+#include<iostream>
+using namespace std;
+
+int main() {
+    const int userId = 1234;
+    const int password = 0000;
+    
+    int inputID, inputPassword;
+    cout << "Enter your ID here";
+    cin >> inputID;
+    cout << "Enter your password here";
+    cin >> inputPassword;
+    
+    bool isGranted =  (userId == inputID) && (password == inputPassword);
+    
+    cout << "Access Granted" << isGranted << endl;
+    cout << "Access Denied" << !isGranted << endl;
+    return 0;
+}
