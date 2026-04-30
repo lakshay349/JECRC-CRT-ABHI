@@ -30,3 +30,18 @@ int main() {
     return 0;
    
 }
+
+
+//Problem-3
+//Logical and Rlational Operators
+#include <iostream>
+using namespace std;
+
+int main() {
+   int side1, side2, side3;
+   cin >> side1 >> side2 >> side3;
+   
+   bool isEquilateral = (side1 > 0) && (side1 == side2) && (side2 == side3);
+   cout << isEquilateral << endl;
+   return 0;
+}
