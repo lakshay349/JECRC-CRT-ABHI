@@ -123,4 +123,32 @@ int main(){
 }
 
 
+// Problem -7 
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    string dayornight;
+    bool motionDetected;
+    cout<<"Is it Day or night? :";
+    cin>>dayornight;
+    cout<<"Is Motion Detected?(1 for yes, 0 for No):";
+    cin>>motionDetected;
+    
+    
+    if(dayornight == "Night" || dayornight == "night"){
+        if(motionDetected){
+            cout<<"turn on LEd lights with 100% brighthess....";
+        }else{
+            cout<<"Turn on light with only 10%  brightness...";
+        }
+    }else{
+        cout<<"turn off the lights...";
+    }
+
+    return 0;
+}
+
+
 
