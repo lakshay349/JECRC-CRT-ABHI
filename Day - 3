@@ -95,3 +95,18 @@ int main(){
     return 0;
 }
 
+
+// Problem -- 8
+// Factorial of any number
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int fact =1;
+    for(int i=n;i>=1;i--){
+        fact = fact*i;
+    }
+    cout<<fact;
+    return 0;
+}
