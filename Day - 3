@@ -1,0 +1,39 @@
+// Problem 1 --
+// Print 1-10 using a for loop
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+for(int i = 1; i<=10;i++){
+    cout<<i<<endl;
+}
+
+}
+
+
+// Problem 2 --
+// Print 10-1 using a for loop
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+for(int i = 10; i>=1;i--){
+    cout<<i<<endl;
+}
+
+}
+
+
+// Problem -- 3
+// Print 1 to n
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+for(int i = 1; i<=n;i++){
+    cout<<i<<endl;
+}
+
+}
