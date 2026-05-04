@@ -1,0 +1,150 @@
+//Problem --1
+//Print 1-10, 10 number of times
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // number of times to print patten
+	for(int i=1;i<=10;i++){
+	    // defines what to print a pattern
+	    for(int j=1;j<=10;j++){
+	        cout<<j<<" ";
+	    }
+	    cout<<endl;
+	}
+
+}
+
+
+//Problem --2
+//Print square pattern
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // number of times to print patten
+	for(int i=1;i<=10;i++){
+	    // defines what to print a pattern
+	    for(int j=1;j<=10;j++){
+	        cout<<"*"<<" ";
+	    }
+	    cout<<endl;
+	}
+
+}
+
+
+//Problem --3
+//Print right angle triangle pattern
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int m;
+    cin>>m;
+    // number of times to print patten
+	for(int i=1;i<=m;i++){
+	    // defines what to print a pattern
+	    for(int j=1;j<=i;j++){
+	        cout<<"*"<<" ";
+	    }
+	    cout<<endl;
+	}
+
+}
+
+
+//Problem --4
+//Print pyramid pattern
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int m;
+    cin>>m;
+    // number of times to print patten
+	for(int i=1;i<=m;i++){
+	   for(int k=(i-1);k<=m;k++){
+	       cout<<" ";
+	   }
+	    // defines what to print a pattern
+	    for(int j=1;j<=i;j++){
+	        cout<<"*"<<" ";
+	    }
+	    cout<<endl;
+	}
+
+}
+
+
+
+//Problem --5
+//Print pyramid pattern
+#include <iostream>
+using namespace std;
+
+int main() {
+    int m;
+    cin>>m;
+    // number of times to print pattern
+	for(int i=1;i<=m;i++){
+	   for(int k=m-i;k>=1;k--){
+	       cout<<" ";
+	   }
+	    // defines what to print a pattern
+	    for(int j=1;j<=i;j++){
+	        cout<<"*";
+	    }
+	    cout<<endl;
+	}
+
+}
+
+
+//Problem --6
+//Print rectangle pattern
+#include <iostream>
+using namespace std;
+
+int main() {
+    int m,n;
+    cin>>m>>n;
+    // number of times to print pattern
+	for(int i=1;i<=m;i++){
+	   for(int j=1;j<=n;j++){
+	        cout<<"*";
+	    }
+	    cout<<endl;
+	}
+
+}
+
+
+//Problem --7
+//Print hollow square pattern
+#include <iostream>
+using namespace std;
+
+int main() {
+    int m;
+    cin>>m;
+    // number of times to print pattern
+	for(int i=1;i<=m;i++){
+	   for(int j=1;j<=m;j++){
+	       cout<<" ";
+	       if(i==1||j==1||j==m||i==m){
+	           cout<<"*";
+	       }else{
+	           cout<<" ";
+	       }
+	    }
+	    cout<<endl;
+	}
+
+}
+
+
+
+
+
+
