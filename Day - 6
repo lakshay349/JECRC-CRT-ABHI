@@ -1,0 +1,123 @@
+// Problem--1
+// Swapping of values of 2 variables using swap function
+#include <iostream>
+using namespace std;
+void swapNumber(int* x, int* y){
+    int temp =*x;
+    *x = *y;
+    *y = temp;
+}
+int main()
+{
+
+       int a;
+       int b;
+       cin>>a>>b;
+       swapNumber(&a,&b);
+       cout<<a<<" "<<b;
+   
+
+    return 0;
+}
+//Problem--2
+// Default Arguments
+#include<iostream>
+using namespace std;
+int area(int a,int b=5){
+    return a*b;
+}
+int main(){
+    cout<<area(10)<<endl;
+    cout<<area(10,3);
+}
+
+
+
+// Practice Problems
+#include <iostream>
+using namespace std;
+int rateofcoffee(int &a){
+     
+     return a*30;
+}
+int main(){
+    int coffee=5;
+    cout<<rateofcoffee(coffee);
+    
+}
+
+
+
+// Practice Problem
+// Smart AC Remote / Function overloading / Default Arguments
+
+#include<iostream>
+using namespace std;
+void setTemperature(int temp =22){
+    cout<<"temperature set to "<<temp<<" C"<<endl;
+}
+
+void setTemperature(double temp){
+    cout<<"temperature set to "<<temp<<" C"<<endl;
+}
+void setTemperature(string mode){
+    if(mode=="ECO"){
+        cout<<"temperature set to 24 C "<<endl;
+        
+    }else if(mode == "TURBO"){
+        cout<<"temperature set to 18 C "<<endl;
+    }
+}
+int main(){
+    setTemperature(); // default value -- 22
+    setTemperature(20.5); // manually setting the temperature
+    setTemperature("ECO") ;
+     setTemperature("TURBO"); // setTemperature to 18
+}
+
+
+
+// Practice Problem 
+// Classes & Objects\
+
+#include <iostream>
+using namespace std;
+class Student{
+    public:
+    string name;
+    int age;
+
+
+void introduce(){
+    cout<<"Hi there, this person name is "<<name<<" and his age is "<<age<<"."<<endl;
+}
+};
+int main(){
+    Student s1,s2;
+    s1.name="Lakshay";
+    s1.age=21;
+    s2.name="Aman";
+    s2.age=23;
+    s1.introduce();
+    s2.introduce();
+}
+
+
+// Practice Problems 
+// Access Modifiers
+// 7.1 -- public
+
+#include<iostream>
+using namespace std;
+
+class PublicPark{
+    public:
+    void enter(){
+        cout<<"Anyone can enter in the park...";
+    }
+};
+
+int main(){
+    PublicPark p;
+    p.enter();
+}
