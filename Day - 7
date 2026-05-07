@@ -1,0 +1,95 @@
+// Access Specifier -- Public,Private,protected
+// Problem -- 7.2 Private
+
+#include<iostream>
+using namespace std;
+class BankAccount{
+    
+    private:
+    int Balance = 5000;
+    
+    public:
+    void showBalance(){
+        cout<<"Balance in your accont is: "<<Balance;
+    }
+};
+int main(){
+    BankAccount myaccount;
+    myaccount.showBalance();
+}
+
+
+
+
+// Access Specifier
+// 7.3 -- protected
+#include <iostream>
+using namespace std;
+class Parent{
+ protected:   
+    int secretCode=1234;
+};
+class child:public Parent{
+    public:
+    void accessofSecretCode(){
+       cout<<"secretCode of the locker is "<<secretCode;
+    }
+};
+int main()
+{
+    child obj1;
+    obj1.accessofSecretCode();
+
+    return 0;
+}
+
+
+
+
+// Problem -- 2 
+// Constructors
+// Types -- 2.1 -- default
+
+#include<iostream>
+using namespace std;
+class wifiConnection{
+    public:
+    string networkName;
+    string password;
+    wifiConnection(){
+        networkName="Bathroom cam 1";
+        password="litterasee";
+    }
+    public:
+   void showDetails(){
+        cout<< "Network name is "<<networkName<<" and its password is "<<password;
+    }
+};
+
+int main(){
+    wifiConnection obj1;
+obj1.showDetails();
+    
+}
+
+
+// 2.2 -- Parameterized Constructors
+#include<iostream>
+using namespace std;
+class Student{
+    public:
+    string name;
+    int id;
+    Student(string studentName, int studentID){
+        name = studentName;
+        id = studentID;
+    }
+    public:
+    void displayDetails(){
+        cout<<"Name: "<<name<<endl<<"ID: "<<id;
+    }
+};
+int main(){
+    Student std1("Lakshay",1180);
+    std1.displayDetails();
+}
