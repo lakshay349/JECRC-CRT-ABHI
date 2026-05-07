@@ -131,3 +131,10 @@ int main(){
     cout<<obj1.getbalance();
 }
 
+
+// Problem -- 4
+// Abstractionn means hiding the implementation and showing only the necessary/ essential
+// features to the users
+// abstrct class -- class cannot be initialized and it is formed using the abstract keyword
+// abstract method -- there is no initialization of the abstract method
+
