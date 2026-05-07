@@ -93,3 +93,41 @@ int main(){
     Student std1("Lakshay",1180);
     std1.displayDetails();
 }
+
+
+//Problem -- 3
+// Pillar of OOPS
+// Encapsulation
+// It means binding the data into a single unit(Functions,data,variables,methods)
+//into a single unit called class and making some restrictions on this class members
+// Data Security
+// Controlled acces over my Data
+// Validation befor accessing the Data
+//code readability and maintainability
+
+#include<iostream>
+using namespace std;
+class BankAccount{
+    private:
+    int Balance;
+    
+    public:
+    void setBalance(int amount){
+        if(amount>=0){
+         Balance=amount;   
+        }else{
+            cout<<"Enter a valid Number...";
+        }
+    }
+    
+    public:
+    int getbalance(){
+        return Balance;
+    }
+};
+int main(){
+    BankAccount obj1;
+    obj1.setBalance(5000);
+    cout<<obj1.getbalance();
+}
+
