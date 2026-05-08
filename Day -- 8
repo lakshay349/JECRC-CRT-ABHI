@@ -184,3 +184,90 @@ int main(){
     D obj1;
     obj1.print();
 }
+
+
+// Problem -- 2
+// Polymorphism
+// It means one name but many forms
+// same functions behaving differently depending on the type of objectif called
+//Two Types
+// Compile time Polymorphism -- function overloading -- Static
+// Resolve at compile time
+// function overloads -- same function name , but different parameters
+// faster execution
+// Run time Polymorphism -- function overriding -- Dynamic
+// resolved at run time
+// function runtime -- same function name,same parameters,but different class
+// uses a virtual keyword in the base class
+// achieving this through the concept of Inheritance
+
+// Types of Polymorphism -- 2.1
+// function overloading
+#include<iostream>
+using namespace std;
+int add(int a,int b){
+    return a+b;
+}
+double add(int a, int b, int c){
+    return a+b+c;
+}
+float add(int a, int b , int c, int d){
+    return a+b+c+d;
+}
+int main(){
+    cout<<add(5,3)<<endl;
+    cout<<add(5,3,6)<<endl;
+    cout<<add(5,3,6,8)<<endl;
+}
+
+
+
+//Function Overloading
+#include <iostream>
+using namespace std;
+class Math {
+    public:
+    void add(int a, int b){
+        cout<<a+b<<endl;
+    }
+    public:
+    void add(int a, int b,int c){
+        cout<<a+b+c<<endl;
+}
+public:
+void add(double a, double b){
+        cout<<a+b<<endl;
+}
+};
+int main(){
+    Math m;
+    m.add(5,2);
+    m.add(5,5,5);
+    m.add(5.5,6.7);
+}
+
+
+
+// function overriding
+#include<iostream>
+using namespace std;
+class Parent{
+    public:
+    virtual void sum(int a, int b){
+        cout<<"a+b: "<<a+b<<endl;
+    }
+};
+class child : public Parent{
+    public:
+    void sum(int a,int b) override {
+       cout<<"a+b"<<a+b<<endl; 
+    }
+};
+int main (){
+    Parent p;
+    child c;
+    c.sum(10,20);
+    p.sum(13,13);
+}
+
+
