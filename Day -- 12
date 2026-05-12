@@ -1,0 +1,38 @@
+// printnumber 1 to 10 using recursion
+#include <iostream>
+using namespace std;
+void printnumber(int n){
+    // Base
+    if(n>10){
+        return;
+    }
+    cout<<n<<endl;
+    printnumber(n+1);
+}
+int main()
+{
+    printnumber(1);
+
+    return 0;
+}
+
+
+
+
+// factorial of 5
+#include <iostream>
+using namespace std;
+int factorial(int n){
+    // Base
+   if(n==0||n==1){
+   return 1;
+   }
+   //logic
+   return n*factorial(n-1);
+}
+int main()
+{
+    cout<<factorial(5);
+    return 0;
+
+}
