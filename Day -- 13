@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int cosecutiveOnes(int n){
+    // logic
+    if(n==0){
+        return 1;
+    }
+    if(n==1){
+        return 2;
+    }
+    if(n==2){
+        return 3;
+    }
+    return cosecutiveOnes(n-1) + cosecutiveOnes(n-2);
+    
+}
+int main() {
+
+cout<<cosecutiveOnes(10);
+return 0;
+}
